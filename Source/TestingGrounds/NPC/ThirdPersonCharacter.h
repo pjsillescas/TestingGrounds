@@ -18,15 +18,15 @@ class AThirdPersonCharacter : public ACharacter
 	/** Follow camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FollowCamera;
-
-	/** Gun mesh: 1st person view (seen only by self) */
+	/*
+	/ ** Gun mesh: 1st person view (seen only by self) * /
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
 	class USkeletalMeshComponent* FP_Gun;
 
-	/** Location on gun mesh where projectiles should spawn. */
+	/ ** Location on gun mesh where projectiles should spawn. * /
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
 	class USceneComponent* FP_MuzzleLocation;
-
+	*/
 public:
 	AThirdPersonCharacter();
 
