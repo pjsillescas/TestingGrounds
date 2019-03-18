@@ -23,6 +23,7 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UFUNCTION(BlueprintCallable,Category = "Firing")
 	void Fire();
 
 	/** Gun mesh: 1st person view (seen only by self) */
