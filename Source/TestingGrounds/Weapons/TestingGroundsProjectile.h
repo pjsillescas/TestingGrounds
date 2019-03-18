@@ -19,6 +19,10 @@ class ATestingGroundsProjectile : public AActor
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
 	class UProjectileMovementComponent* ProjectileMovement;
 
+protected:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Setup")
+	float DamagePoints;
+
 public:
 	ATestingGroundsProjectile();
 
